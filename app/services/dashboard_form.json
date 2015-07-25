@@ -1,0 +1,30 @@
+{
+ "title": "Desktop",
+ "fields": [
+   {
+     "type": "multiple_choice",
+     "question": "What would you like to do now?",
+     "required": true,
+     "choices": [
+       {
+         "label": "Music"
+       },
+       {
+         "label": "Watch cartoons!"
+       },
+       {
+         "label": "Play!"
+       },
+       {
+         "label": "Tell dad!"
+       },
+       {
+         "label": "Read my comic!"
+       },
+       {
+         "label": "Learn!"
+       }
+     ]
+   }
+ ]
+}
