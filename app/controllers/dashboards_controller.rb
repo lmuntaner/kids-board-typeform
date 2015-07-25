@@ -28,6 +28,15 @@ class DashboardsController < ApplicationController
     answers = params[:answers]
     email = ""
     answers.each_with_index do |answer, index|
+      if index == 3
+        email = answer["data"]["value"]
+        next
+      end
+      if index == 4
+        body = answer["data"]["value"]["label"]
+        dashboard.email_integrations.create(email: email, body: body, label: "Email")
+        next
+      end
       next if index == 3 || index == 4
       name = answer["data"]["value"]["label"]
       label = CATEGORY_DICT[index]
