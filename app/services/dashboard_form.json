@@ -2,27 +2,33 @@
  "title": "Desktop",
  "fields": [
    {
-     "type": "multiple_choice",
+     "type": "picture_choice",
      "question": "What would you like to do now?",
      "required": true,
      "choices": [
        {
-         "label": "Music"
+          "image_id": 2593,
+          "label": "Music"
        },
        {
-         "label": "Cartoons"
+          "image_id": 2596,
+          "label": "Cartoons"
        },
        {
-         "label": "Games"
+          "image_id": 2589,
+          "label": "Games"
        },
        {
-         "label": "Tell dad!"
+          "image_id": 2590,
+          "label": "Tell dad!"
        },
        {
-         "label": "Comic"
+          "image_id": 2582,
+          "label": "Comic"
        },
        {
-         "label": "Learning"
+          "image_id": 2595,
+          "label": "Learning"
        }
      ]
    }
