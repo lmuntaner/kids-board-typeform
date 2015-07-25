@@ -1,9 +1,10 @@
 class DashboardsController < ApplicationController
 
-  def index
+  def new
   end
 
-  def new
+  def show
+    @dashboard = current_user.dashboards.first
   end
 
   def create
@@ -14,7 +15,7 @@ class DashboardsController < ApplicationController
     IntegrationRetriever.create_dashboard_integrations(dashboard, answers)
     data = File.read("#{Rails.root}/app/services/dashboard_form.json")
     tempHash = JSON.parse(data)
-    personalize_webhook = "https://kids-board.herokuapp.com/users/#{@user.id}/setup_forms"
+    personalize_webhook = "https://kids-board.herokuapp.com/users/#{user.id}/integrations"
     tempHash["webhook_submit_url"] = personalize_webhook
 
     generateTF = Faraday.new(:url => 'https://api.typeform.io') do |faraday|
@@ -29,5 +30,6 @@ class DashboardsController < ApplicationController
       req.body = tempHash.to_json
     end
 
+    redirect_to root_path
   end
 end

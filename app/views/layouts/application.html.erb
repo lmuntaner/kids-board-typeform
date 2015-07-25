@@ -7,6 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="turquoise">
+  <div class= "container">
+    <div class="row">
+      <div class="col-md-1 col-md-offset-11">
+        <% if current_user %>
+          <%= link_to 'Log out', logout_path %>
+        <% else %>
+          <%= link_to 'Sign up', new_user_path %>
+          <%= link_to 'Log in', login_path %>
+        <% end %>
+      </div>
+    <div>
+  </div>
 
 <%= yield %>
 

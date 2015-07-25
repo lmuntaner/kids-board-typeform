@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: "static_pages#index"
 
-  resources :dashboards, only:[:new, :create]
+  resources :dashboards, only:[:new, :create, :show]
 
   resources :users
 
