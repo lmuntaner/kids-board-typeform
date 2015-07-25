@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+ .turquoise {
+   background: #8ac5c6;
+ }
