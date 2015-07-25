@@ -26,6 +26,7 @@ class DashboardsController < ApplicationController
     dashboard = user.dashboards.new
     dashboard.save
     answers = params[:answers]
+    email = ""
     answers.each_with_index do |answer, index|
       next if index == 3 || index == 4
       name = answer["data"]["value"]["label"]
