@@ -1,0 +1,95 @@
+{
+ "title": "Configure your KidsBoards",
+ "fields": [
+   {
+     "type": "multiple_choice",
+     "question": "What music do you want your children to hear?",
+     "description": "KdisBoard will be able to reproduce music for your child through Spotify",
+     "required": true,
+     "choices": [
+       {
+         "label": "Thanksgiving Kids Songs"
+       },
+       {
+         "label": "Ultimate 100 Kids songs"
+       }
+     ]
+   },
+   {   
+     "type": "multiple_choice",
+     "question": "What cartoon do you want your children to watch?",    
+     "description": "Your kid is also watching YouTube, come on...",
+     "required": true,
+     "choices": [
+       {
+         "label": "Coyote & Rodrunner Hall of Fame"
+       },
+       {
+         "label": "Looney Tunes cartoons"
+       }
+     ]
+   },
+   {
+     "type": "multiple_choice",
+     "question": "Do you want your kid to play some games?",    
+     "description": "Leave them kids alone..",
+     "required": true,
+     "choices": [
+       {
+         "label": "Angry Birds"
+       },
+       {
+         "label": "Candy Crush"
+       }
+     ]
+   },
+   {
+     "type": "short_text",
+     "question": "Hey, what's your email?",    
+     "description": "You will then be able to send a predefined email",
+     "required": true
+   },
+   {
+     "type": "multiple_choice",
+     "question": "Preset the email you want your children to send you...",    
+     "description": "By pressing a single button, your child will send you a mail.",
+     "required": true,
+     "choices": [
+       {
+         "label": "I'm home"
+       },
+       {
+         "label": "I care about you!"
+       }
+     ]
+   },
+   {
+     "type": "multiple_choice",
+     "question": "What comic do you want your children to read?",    
+     "description": "A comic is a great way to spend an entire afternoon staring at the screen",
+     "required": true,
+     "choices": [
+       {
+         "label": "Tiny Titans"
+       },
+       {
+         "label": "Batman"
+       }
+     ]
+   },
+       {
+     "type": "multiple_choice",
+     "question": "What about some learning sites?",    
+     "description": "Choose some of the best resources for your child",
+     "required": true,
+     "choices": [
+       {
+         "label": "Code.org"
+       },
+       {
+         "label": "Duolingo"
+       }
+     ]
+   }
+ ]
+}
