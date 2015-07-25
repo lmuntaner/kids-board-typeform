@@ -7,15 +7,15 @@ var displayError = function () {
 	console.log("There was an error");
 };
 
-var checkUrl = function(setup_form) {
-	if (setup_form.form_url != "") {
-  	window.location = setup_form.form_url;
+var checkUrl = function(dashboard) {
+	if (dashboard.dashboard_url != null) {
+  	window.location = "/dashboards";
   };
 };
 
 var request = function() {
   $.ajax({
-  url: "/setup_form",
+  url: "/dashboards/created",
   data: "",
   success: checkUrl,
   error: displayError,
@@ -25,7 +25,7 @@ var request = function() {
 
 $(function () {
 	setInterval(function(){
-		request(); 
+		request();
   	}, 1000)
 });
 

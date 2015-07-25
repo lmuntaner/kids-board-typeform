@@ -13,6 +13,12 @@ class DashboardsController < ApplicationController
   end
 
   def new
+    current_user.dashboards.create
+  end
+
+  def created
+    dashboard = current_user.dashboards.last
+    render json: dashboard
   end
 
   def create

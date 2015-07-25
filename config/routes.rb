@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'users/:user_id/setup_forms' => 'dashboards#create'
   post 'users/:user_id/selected_integrations' => 'selected_integrations#create'
   get 'selected_integrations/created' => 'selected_integrations#selection_created'
+  get 'dashboards/created' => 'dashboards#created'
 
   resources :dashboards, only:[:new, :index]
 
@@ -11,6 +12,4 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-
-  resource :setup_form
 end
