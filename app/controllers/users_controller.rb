@@ -26,10 +26,8 @@ class UsersController < ApplicationController
         req.body = tempHash.to_json
       end
 
-      # get the link
-      # create a setup_form row
-      # get the url from response
-      @user.setup_forms.create(form_url: url)
+      url = JSON.parse(response.body)["links"][1]["href"]
+      @user.setup_forms.create!(form_url: url)
       redirect_to root_path
     else
       render :new
