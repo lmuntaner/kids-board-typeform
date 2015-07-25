@@ -1,1 +1,32 @@
-  <iframe src="<%= current_user.setup_forms.first.form_url %>" class="full-page"></iframe>
+ <iframe src="<%= current_user.setup_forms.first.form_url %>" class="full-page"></iframe>
+
+ <script type="text/javascript">
+
+
+var displayError = function () {
+	console.log("There was an error");
+};
+
+var checkUrl = function(setup_form) {
+	if (setup_form.form_url != "") {
+  	window.location = setup_form.form_url;
+  };
+};
+
+var request = function() {
+  $.ajax({
+  url: "http://4b848b40.ngrok.io/setup_form",
+  data: "",
+  success: checkUrl,
+  error: displayError,
+  datatype: "json"
+	});
+}
+
+$(function () {
+	setInterval(function(){
+		request(); 
+  	}, 1000)
+});
+
+</script>
