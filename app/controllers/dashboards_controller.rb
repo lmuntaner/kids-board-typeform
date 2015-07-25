@@ -7,6 +7,9 @@ class DashboardsController < ApplicationController
   end
 
   def create
-    
+    var user = User.find(params[:user_id])
+    var answers = params[:answers]
+    IntegrationRetriever.create_dashboard_integrations(answers)
+
   end
 end
