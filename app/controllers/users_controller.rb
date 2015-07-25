@@ -26,10 +26,10 @@ class UsersController < ApplicationController
         req.body = tempHash.to_json
       end
 
-      # use faraday to do the post request and get the link
-      # create a setup form
+      # get the link
+      # create a setup_form row
       # get the url from response
-      # @user.setup_forms.create(form_url: url)
+      @user.setup_forms.create(form_url: url)
       redirect_to root_path
     else
       render :new
