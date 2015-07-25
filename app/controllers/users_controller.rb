@@ -28,6 +28,7 @@ class UsersController < ApplicationController
 
       url = JSON.parse(response.body)["links"][1]["href"]
       @user.setup_forms.create!(form_url: url)
+      session[:user_id] = @user.id
       redirect_to root_path
     else
       render :new
