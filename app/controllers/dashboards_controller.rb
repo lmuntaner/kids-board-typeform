@@ -1,15 +1,15 @@
 class DashboardsController < ApplicationController
 
-  def new
+  def index
+    @dashboard = current_user.dashboards.first
   end
 
-  def show
-    @dashboard = current_user.dashboards.first
+  def new
   end
 
   def create
     user = User.find(params[:user_id])
-    dashboard = user.dashboard.new
+    dashboard = user.dashboards.new
     dashboard.save
     answers = params[:answers]
     IntegrationRetriever.create_dashboard_integrations(dashboard, answers)
