@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150725150225) do
+ActiveRecord::Schema.define(version: 20150725170644) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,14 @@ ActiveRecord::Schema.define(version: 20150725150225) do
     t.datetime "updated_at",      null: false
     t.string   "integration_url"
     t.string   "name"
+  end
+
+  create_table "selected_integrations", force: :cascade do |t|
+    t.integer  "dashboard_id"
+    t.string   "label"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "user_id"
   end
 
   create_table "setup_forms", force: :cascade do |t|
