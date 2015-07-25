@@ -4,7 +4,9 @@
       <a href="/dashboards/new" class="link-button btn btn-primary btn-lg">Create Dashboard</a>
         <div class="or-log-in" style="text-align:center;">
           <p>
-            Or <a href="/login">log in</a>
+            <% if current_user %>
+              Or <a href="/dashboards">Go to your dashboard</a>
+            <% end %>
           </p>
         </div>
 

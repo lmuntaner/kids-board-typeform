@@ -11,6 +11,12 @@ class ApplicationController < ActionController::Base
    @current_user
   end
 
+  def ensure_logged_in
+    unless current_user.present?
+      redirect_to login_path
+    end
+  end
+
   def authorize_user
    unless current_user
      flash[:message] = "Please log in or register to access this page"

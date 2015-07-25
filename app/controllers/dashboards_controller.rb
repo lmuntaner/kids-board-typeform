@@ -7,6 +7,8 @@ class DashboardsController < ApplicationController
     6 => "Learning"
   }
 
+  before_action :ensure_logged_in, only: [:index, :new]
+
   def index
     @dashboard = current_user.dashboards.last
     current_user.selected_integrations.create(dashboard_id: @dashboard.id)
