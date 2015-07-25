@@ -1,5 +1,6 @@
 {
  "title": "Configure your KidsBoards",
+ "design_id": 2547,
  "fields": [
    {
      "type": "multiple_choice",
@@ -15,9 +16,9 @@
        }
      ]
    },
-   {   
+   {
      "type": "multiple_choice",
-     "question": "What cartoon do you want your children to watch?",    
+     "question": "What cartoon do you want your children to watch?",
      "description": "Your kid is also watching YouTube, come on...",
      "required": true,
      "choices": [
@@ -31,7 +32,7 @@
    },
    {
      "type": "multiple_choice",
-     "question": "Do you want your kid to play some games?",    
+     "question": "Do you want your kid to play some games?",
      "description": "Leave them kids alone..",
      "required": true,
      "choices": [
@@ -45,13 +46,13 @@
    },
    {
      "type": "short_text",
-     "question": "Hey, what's your email?",    
+     "question": "Hey, what's your email?",
      "description": "You will then be able to send a predefined email",
      "required": true
    },
    {
      "type": "multiple_choice",
-     "question": "Preset the email you want your children to send you...",    
+     "question": "Preset the email you want your children to send you...",
      "description": "By pressing a single button, your child will send you a mail.",
      "required": true,
      "choices": [
@@ -65,7 +66,7 @@
    },
    {
      "type": "multiple_choice",
-     "question": "What comic do you want your children to read?",    
+     "question": "What comic do you want your children to read?",
      "description": "A comic is a great way to spend an entire afternoon staring at the screen",
      "required": true,
      "choices": [
@@ -79,7 +80,7 @@
    },
        {
      "type": "multiple_choice",
-     "question": "What about some learning sites?",    
+     "question": "What about some learning sites?",
      "description": "Choose some of the best resources for your child",
      "required": true,
      "choices": [

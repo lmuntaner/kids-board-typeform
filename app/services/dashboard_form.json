@@ -1,5 +1,6 @@
 {
  "title": "Desktop",
+ "design_id": 2547,
  "fields": [
    {
      "type": "picture_choice",
@@ -7,7 +8,7 @@
      "required": true,
      "choices": [
        {
-          "image_id": 2593,
+          "image_id": 2706,
           "label": "Music"
        },
        {
@@ -19,8 +20,8 @@
           "label": "Games"
        },
        {
-          "image_id": 2590,
-          "label": "Tell dad!"
+          "image_id": 2703,
+          "label": "Email"
        },
        {
           "image_id": 2582,

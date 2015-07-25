@@ -10,8 +10,8 @@ puts " --- Deleting all Integrations --- "
 
 Integration.destroy_all
 
-Integration.create!(field_number: 1, name: "Thanksgiving Kids Songs", integration_url: "spotify:artist:3VONALbDHmPgtnW0iperCD")
-Integration.create!(field_number: 1, name: "Ultimate 100 Kids songs", integration_url: "spotify:album:3iLA72dHYLr1bn2MHxmKaP")
+Integration.create!(field_number: 1, name: "Thanksgiving Kids Songs", integration_url: "https://open.spotify.com/artist/3VONALbDHmPgtnW0iperCD")
+Integration.create!(field_number: 1, name: "Ultimate 100 Kids songs", integration_url: "https://open.spotify.com/album/3iLA72dHYLr1bn2MHxmKaP")
 Integration.create!(field_number: 2, name: "Coyote & Rodrunner Hall of Fame", integration_url: "https://www.youtube.com/watch?v=vFkqmxtB_8U&list=PLmJzZsUhj6P3qT1X9daZvHQs-4Ng2pFQq")
 Integration.create!(field_number: 2, name: "Looney Tunes cartoons", integration_url: "https://www.youtube.com/watch?v=xFdG8lZ4PJw&list=PLZs0gQed9tMTqa7R4x3jVr0V-9RaKlpBD")
 Integration.create!(field_number: 3, name: "Angry Birds", integration_url: "http://games.mi9.com/play_angry-birds-beat-all-the-bad-pigs/")
