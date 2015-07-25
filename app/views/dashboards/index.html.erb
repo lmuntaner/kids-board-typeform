@@ -1,1 +1,21 @@
 <iframe src="<%= @dashboard.dashboard_url %>" class="full-page"></iframe>
+
+<script type="text/javascript">
+
+  $(function () {
+    setInterval(function () {
+      $.ajax({
+        url: '/selected_integrations/created',
+        type: "GET",
+        success: function (response) {
+          if (response.created) {
+            window.location = response.redirect_url
+          } else {
+            console.log(response.created)
+          }
+        }
+      })
+    }, 1000)
+  });
+
+</script>

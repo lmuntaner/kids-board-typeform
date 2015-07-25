@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   validates :password, presence: true
   has_many :setup_forms
   has_many :dashboards
+  has_many :selected_integrations
 end
