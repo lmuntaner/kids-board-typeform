@@ -1,18 +1,18 @@
-<div class="container">
+<div class="container dashboard_create">
   <div class="row">
     <div class="col-md-12">
 
       <h2>Log in!</h2>
       <%= form_tag url: '/login' %>
-      <div class="field">
-        Email:               <%= text_field_tag :email %>
-      </div>
-      <div class="field">
-        Password             <%= password_field_tag :password %>
-      </div>
-      <div class="actions">
-        <%= submit_tag 'Log in' %>
-      </div>
+        <div class="field">
+          <%= text_field_tag :email, :placeholder => "email", class: "signup_form" %>
+        </div>
+        <div class="field">
+          <%= password_field_tag :password, :placeholder => "enter your password", class: "signup_form" %>
+        </div>
+        <div class="actions">
+          <%= submit_tag 'Log in' %>
+        </div>
     </div>
   </div>
 </div>

@@ -9,13 +9,16 @@
 <body class="turquoise">
   <div class= "container">
     <div class="row">
-      <div class="col-md-1 col-md-offset-11">
-        <% if current_user %>
-          <%= link_to 'Log out', logout_path %>
-        <% else %>
-          <%= link_to 'Sign up', new_user_path %>
-          <%= link_to 'Log in', login_path %>
-        <% end %>
+      <div class="col-md-2 col-md-offset-10">
+        <ul class="links">
+          <% if current_user %>
+            <li class="link"><%= link_to 'Log out', logout_path, class: "link-button" %></li>
+          <% else %>
+            <li class="link"><%= link_to 'Sign up', new_user_path, class: "link-button" %></li>
+            <li class="link"><%= link_to 'Log in', login_path, class: "link-button" %></li>
+          <% end %>
+          <li></li>
+        </ul>
       </div>
     <div>
   </div>

@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
 
   def ensure_logged_in
     unless current_user.present?
-      redirect_to login_path
+      redirect_to new_user_path
     end
   end
 

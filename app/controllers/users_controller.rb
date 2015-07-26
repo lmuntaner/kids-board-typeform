@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       data = File.read("#{Rails.root}/app/services/setup_form.json")
       tempHash = JSON.parse(data)
       # personalize_webhook = "https://kids-board.herokuapp.com/users/#{@user.id}/setup_forms"
-      personalize_webhook = "http://7cea7855.ngrok.com/users/#{@user.id}/setup_forms"
+      personalize_webhook = "http://37bf2bd5.ngrok.com/users/#{@user.id}/setup_forms"
       tempHash["webhook_submit_url"] = personalize_webhook
 
       generateTF = Faraday.new(:url => 'https://api.typeform.io') do |faraday|

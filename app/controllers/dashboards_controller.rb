@@ -48,7 +48,7 @@ class DashboardsController < ApplicationController
     data = File.read("#{Rails.root}/app/services/dashboard_form.json")
     tempHash = JSON.parse(data)
     # personalize_webhook = "https://kids-board.herokuapp.com/users/#{user.id}/integrations"
-    personalize_webhook = "http://7cea7855.ngrok.com/users/#{user.id}/selected_integrations"
+    personalize_webhook = "http://37bf2bd5.ngrok.com/users/#{user.id}/selected_integrations"
     tempHash["webhook_submit_url"] = personalize_webhook
 
     generateTF = Faraday.new(:url => 'https://api.typeform.io') do |faraday|
