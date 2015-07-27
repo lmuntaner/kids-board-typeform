@@ -21,3 +21,5 @@ to the cartoon chosen by their parent.
   - change the personalize_webhook on the DashboardsController with you ngrok link
 
 **You are good to go**
+
+Built with love by [bbrassart](https://github.com/bbrassart), [kevprice83](https://github.com/kevprice83) and [lmuntaner](https://github.com/lmuntaner)
