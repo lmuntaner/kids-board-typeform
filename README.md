@@ -22,4 +22,4 @@ to the cartoon chosen by their parent.
 
 **You are good to go**
 
-Built with love by [bbrassart](https://github.com/bbrassart), [kevprice83](https://github.com/kevprice83) and [lmuntaner](https://github.com/lmuntaner)
+*Built with love by [bbrassart](https://github.com/bbrassart), [kevprice83](https://github.com/kevprice83) and [lmuntaner](https://github.com/lmuntaner)*
