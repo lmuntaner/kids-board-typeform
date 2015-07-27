@@ -15,9 +15,9 @@ to the cartoon chosen by their parent.
 2. Bundle install
 3. create database and seed it
 4. use [ngrok](https://ngrok.com/)
-  a. initialize the rails server
-  b. initialize the ngrok pointing to your port
-  c. change the personalize_webhook on the UsersController#create with your ngrok link
-  d. change the personalize_webhook on the DashboardsController with you ngrok link
+  - initialize the rails server
+  - initialize the ngrok pointing to your port
+  - change the personalize_webhook on the UsersController#create with your ngrok link
+  - change the personalize_webhook on the DashboardsController with you ngrok link
 
 ** You are good to go **
