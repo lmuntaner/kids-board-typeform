@@ -20,4 +20,4 @@ to the cartoon chosen by their parent.
   - change the personalize_webhook on the UsersController#create with your ngrok link
   - change the personalize_webhook on the DashboardsController with you ngrok link
 
-** You are good to go **
+**You are good to go**
